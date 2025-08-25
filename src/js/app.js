@@ -19,18 +19,18 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   }
 
-  function agregarAmigo(event) {
+  function agregarAmigo() {
     
     const nombreAmigo = inputNombre.value.trim()
 
     if(!nombreAmigo) {
       alert("Por favor, es necesario que inserte un nombre.")
       return
+    } else if(nombreAmigo.length < 3) {
+      alert("Ingrese por favor un nombre válido. Mínimo de 3 caracteres. Máximo, 50.")
+      return
     } else if(!validarFormatoAlfabetico(nombreAmigo)) {
       alert("Formato inválido. Sólo letras de la 'A' a la 'Z'.")
-      return
-    }else if(nombreAmigo.length < 3) {
-      alert("Ingrese por favor un nombre válido. Mínimo de 3 caracteres.")
       return
     } else if(amigosIngresados.some(friend => friend.toLowerCase() === nombreAmigo.toLowerCase())) {
       alert("Ese nombre ya fue ingresado. Elija otro, por favor.")
