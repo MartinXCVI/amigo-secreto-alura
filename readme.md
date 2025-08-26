@@ -16,6 +16,7 @@ Permite ingresar nombres de amigos en una lista y realizar un sorteo para elegir
   - Solo letras (se aceptan tildes, apóstrofes y guiones).
   - Evita duplicados.
 - Mostrar la lista de amigos ingresados.
+- Mostrar errores específicos en la interfaz.
 - Sortear un amigo secreto de manera aleatoria.
 
 ## 🛰️ Tecnologías
